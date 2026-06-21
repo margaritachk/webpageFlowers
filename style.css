@@ -1,1 +1,590 @@
+@import url('https://.googleapis.com');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* ========== HEADER ========== */
+header {
+    width: 100%;
+    height: auto;
+    min-height: 80px;
+    background-color: #E28787;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 300;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+header p {
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    display: none;
+}
+
+header p:hover {
+    color: #FFBDBD;
+}
+
+.btn1, .btn2 {
+    padding: 8px 20px;
+    border-radius: 30px;
+    border: 2px solid #FFBDBD;
+    background-image: linear-gradient(to right, #FFB9BA, #D35759);
+    color: white;
+    font-family: "Unbounded";
+    font-weight: 300;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn1:hover, .btn2:hover {
+    background-color: #ce9cb2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ========== UPPER LEVEL ========== */
+.upperlvl {
+    background-image: url("src/background2.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.title {
+    font-family: 'Lexend Giga', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    font-family: "Unbounded", sans-serif;
+    font-weight: normal;
+    color: #6c3535;
+    font-size: 6vw;
+    margin-bottom: 15px;
+}
+
+.search {
+    width: 90%;
+    max-width: 400px;
+    height: 40px;
+    background-color: #D69292;
+    opacity: 70%;
+    border: none;
+    border-radius: 20px;
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+.title p {
+    font-size: 16px;
+    margin-top: 15px;
+    color: #4a2424;
+}
+
+.aside {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+    pointer-events: none;
+}
+
+/* ========== MAIN SECTION ========== */
+.main {
+    display: flex;
+    justify-content: center;
+    background-image: url("src/background3.jpg");
+    background-size: cover;
+    padding: 20px;
+}
+
+.buquets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.firstRow, .secondRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.sect {
+    width: 45%;
+    max-width: 250px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+.bq {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.btnAdd {
+    margin-top: 10px;
+    width: 80%;
+    height: 40px;
+    border-top-right-radius: 40%;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: rgb(241, 197, 236);
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-family: "Lexend Giga", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btnAdd:hover {
+    background-color: #ce9cb2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ========== ABOUT US ========== */
+.Aboutus {
+    margin: 0;
+    padding: 30px 20px;
+    background: url("src/background4.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 400px;
+    padding: 20px 0;
+}
+
+.block {
+    height: auto;
+    min-height: 300px;
+    aspect-ratio: 6 / 4;
+    border-radius: 3%;
+    margin: 0;
+    background: #eaeaea;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 600px;
+}
+
+.second {
+    transform-style: flat;
+    background: url("src/background5.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(7px);
+    border-radius: 3%;
+    display: flex;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.inner h1 {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.inner p {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* ========== CONTACTS ========== */
+.Contacts {
+    background-image: url("src/background2.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.conth1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.Contacts p {
+    font-family: "Unbounded", sans-serif;
+    font-size: 14px;
+    color: #6c3535;
+    margin-bottom: 20px;
+}
+
+.row1, .row2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.tg, .ds, .ws, .inst {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tg:hover, .ds:hover, .ws:hover, .inst:hover {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+/* ========== FOOTER ========== */
+footer {
+    width: 100%;
+}
+
+.footer {
+    background: #A85757;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.foot {
+    margin: 5px 0;
+    font-family: "Lexend Giga";
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.foot2 {
+    margin: 5px 0;
+    font-family: "Lexend Giga";
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* ============================================ */
+/* ========== АДАПТИВНОСТЬ ДЛЯ ТЕЛЕФОНА ========== */
+/* ============================================ */
+
+@media (max-width: 768px) {
+    /* HEADER */
+    header {
+        justify-content: center;
+        gap: 8px;
+        padding: 15px;
+        min-height: 70px;
+    }
+
+    header p {
+        display: none;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        order: 1;
+    }
+
+    .btn1 {
+        order: 2;
+        width: auto;
+        padding: 6px 15px;
+        font-size: 10px;
+        height: auto;
+        min-height: 35px;
+    }
+
+    .btn2 {
+        order: 3;
+        width: auto;
+        padding: 6px 15px;
+        font-size: 10px;
+        height: auto;
+        min-height: 35px;
+    }
+
+    /* TITLE */
+    h1 {
+        font-size: 8vw;
+    }
+
+    .title p {
+        font-size: 14px;
+    }
+
+    .search {
+        width: 95%;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .aside {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    /* BOUQUETS */
+    .sect {
+        width: 90%;
+        max-width: 200px;
+    }
+
+    .firstRow, .secondRow {
+        gap: 15px;
+    }
+
+    .btnAdd {
+        font-size: 10px;
+        height: 35px;
+    }
+
+    /* ABOUT US */
+    .block {
+        min-height: 250px;
+        max-width: 100%;
+    }
+
+    .inner h1 {
+        font-size: 24px;
+    }
+
+    .inner p {
+        font-size: 13px;
+        padding: 15px;
+    }
+
+    .container {
+        min-height: 300px;
+        padding: 10px 0;
+    }
+
+    /* CONTACTS */
+    .Contacts {
+        padding: 30px 15px;
+    }
+
+    .conth1 {
+        font-size: 24px;
+    }
+
+    .tg, .ds, .ws, .inst {
+        width: 40px;
+        height: 40px;
+    }
+
+    .row1, .row2 {
+        gap: 20px;
+    }
+}
+
+/* ========== ДЛЯ САМЫХ МАЛЕНЬКИХ ЭКРАНОВ ========== */
+@media (max-width: 480px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .btn1, .btn2 {
+        font-size: 8px;
+        padding: 4px 10px;
+        min-height: 28px;
+    }
+
+    h1 {
+        font-size: 9vw;
+    }
+
+    .title p {
+        font-size: 12px;
+    }
+
+    .sect {
+        width: 95%;
+        max-width: 170px;
+    }
+
+    .block {
+        min-height: 200px;
+    }
+
+    .inner h1 {
+        font-size: 20px;
+    }
+
+    .inner p {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .tg, .ds, .ws, .inst {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer {
+        padding: 20px 15px;
+    }
+
+    .foot {
+        font-size: 14px;
+    }
+
+    .foot2 {
+        font-size: 10px;
+    }
+}
+
+/* ========== ДЛЯ ПЛАНШЕТОВ ========== */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header p {
+        display: block;
+        font-size: 12px;
+    }
+
+    .sect {
+        width: 30%;
+        max-width: 220px;
+    }
+
+    .firstRow, .secondRow {
+        gap: 30px;
+    }
+
+    .aside {
+        width: 40%;
+        max-width: 350px;
+    }
+
+    .all {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .title {
+        text-align: left;
+        width: 60%;
+    }
+
+    .search {
+        width: 80%;
+    }
+}
+
+/* ========== ДЛЯ ДЕСКТОПА ========== */
+@media (min-width: 1025px) {
+    header p {
+        display: block;
+        font-size: 14px;
+    }
+
+    .btn1 {
+        width: 7%;
+        height: 6vh;
+    }
+
+    .btn2 {
+        width: 8%;
+        height: 6vh;
+    }
+
+    .all {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+
+    .title {
+        text-align: left;
+        width: 70%;
+    }
+
+    .title h1 {
+        font-size: 4vw;
+    }
+
+    .aside {
+        width: 19%;
+        height: 90vh;
+    }
+
+    .sect {
+        width: 30%;
+        max-width: 250px;
+    }
+
+    .firstRow, .secondRow {
+        gap: 10%;
+    }
+
+    .tg, .ds, .ws, .inst {
+        width: 8%;
+    }
+}
